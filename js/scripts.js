@@ -11,7 +11,7 @@ const products = [{ "title": "BloodConnect",
 					"url" : "apple.html" },
 					{ "title": "Anubhav Drama Club - HITK", 
 					"description" : "Performed in many street plays, monologues and theatre as a lead actor", 
-					"banner" : "/codebaap/codebaap.github.io/blob/main/img/anubhav.jpg?raw=true", 
+					"banner" : "https://raw.githubusercontent.com/codebaap/codebaap.github.io/main/img/Untitled-1.png", 
 					"url" : "bridgestone.html"}];
 
 //Insert projects info here
