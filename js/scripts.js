@@ -6,7 +6,7 @@ Waves.init();
 
 //Insert products info here
 const products = [{ "title": "Apple", 
-					"description" : "Product Design Engineering Co-op for Apple's Cable and Accesories Team", 
+					"description" : "Product Design Engineering Co-op for Apple's Cable and Accesories", 
 					"banner" : "https://i.imgur.com/kME5mxG.png",
 					"url" : "apple.html" },
 					{ "title": "Bridgestone", 
