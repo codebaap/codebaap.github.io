@@ -11,12 +11,8 @@ const products = [{ "title": "BloodConnect",
 					"url" : "apple.html" },
 					{ "title": "Anubhav Drama Club - HITK", 
 					"description" : "Performed in many street plays, monologues and theatre as a lead actor", 
-					"banner" : "https://instagram.fpat3-3.fna.fbcdn.net/v/t51.2885-15/e35/90997449_120719749537393_2051510657461250742_n.jpg?_nc_ht=instagram.fpat3-3.fna.fbcdn.net&_nc_cat=101&_nc_ohc=E5l2L3nHp7AAX89vt1D&edm=AP_V10EBAAAA&ccb=7-4&oh=04813cdb2df671ad592aa8f7ba1ca5a2&oe=6172C0DD&_nc_sid=4f375e", 
-					"url" : "bridgestone.html"},
-		{ "title": "C-Design Lab", 
-					"description" : "Graduate Assistant for Purdue's C-Design Lab", 
-					"banner" : "https://i.imgur.com/IEohR34.png", 
-					"url" : "cdesign.html"}];
+					"banner" : "/codebaap/codebaap.github.io/blob/main/img/anubhav.jpg?raw=true", 
+					"url" : "bridgestone.html"}];
 
 //Insert projects info here
 const projects = [{ "title": "Floor Cleaning Robot", 
