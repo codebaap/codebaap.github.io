@@ -5,9 +5,9 @@ Waves.init();
 //PORTFOLIO INFO START
 
 //Insert products info here
-const products = [{ "title": "Apple", 
-					"description" : "Product Design Engineering Co-op for Apple's Cable and Accesories", 
-					"banner" : "https://i.imgur.com/kME5mxG.png",
+const products = [{ "title": "BloodConnect", 
+					"description" : "Worked as Data Manager in BloodConnect and retrieve, seperate and sort program output as needed", 
+					"banner" : "https://scontent.fpat3-2.fna.fbcdn.net/v/t1.6435-9/104449187_3690080357675059_613989442308181440_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=973b4a&_nc_ohc=8_c_LQr2FsQAX-ZmOu-&_nc_ht=scontent.fpat3-2.fna&oh=260dcd2cfeed2af61940cf47650638f5&oe=6191B732",
 					"url" : "apple.html" },
 					{ "title": "Bridgestone", 
 					"description" : "Student Corporate Consultant for Bridgestone through Krannert School of Management", 
