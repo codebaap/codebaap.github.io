@@ -187,12 +187,12 @@ $(document).on("click", "#btnProjects", function(){
 	
 	//Render user reply
 	var idProj1 = (totalMessages - messagesRemaining).toString();
-	ReactDOM.render(<MessageUser message="I want to know about your projects!" id={"chat-"+idProj1} />, document.getElementById('userReplies'));
+	ReactDOM.render(<MessageUser message="Did he do any projects?" id={"chat-"+idProj1} />, document.getElementById('userReplies'));
 	messagesRemaining -= 1;
 	$(".replyButtons").before($("#userReplies").html());
 
 	//Render bot reply
-	var botReply = ["Here ya go 😎"];
+	var botReply = ["This portofolio site is his first technical project. 😎"];
 	var idProj2 = (totalMessages - messagesRemaining).toString();
 	ReactDOM.render(<MessageBot message={botReply} id={["chat-"+idProj2]} />, document.getElementById('botReplies'));
 	messagesRemaining -= 1;
@@ -238,20 +238,20 @@ $(document).on("click", "#btnAboutMe", function(){
 	
 	//Render user reply
 	var idAbout1 = (totalMessages - messagesRemaining).toString();
-	ReactDOM.render(<MessageUser message="Tell me more about yourself 🙂" id={"chat-"+idAbout1} />, document.getElementById('userReplies'));
+	ReactDOM.render(<MessageUser message="Tell me more about Pushp Ratan 🙂" id={"chat-"+idAbout1} />, document.getElementById('userReplies'));
 	messagesRemaining -= 1;
 	$(".replyButtons").before($("#userReplies").html());
 	//Set messages for 'about me' reply
-	var aboutMe1 = "Does this mean we're friends? 😁";
+	var aboutMe1 = "Does this mean you like him? 😁";
 	var id1 = "chat-"+(totalMessages - messagesRemaining).toString();
-	var aboutMe2 = "I'm currently building an awesome SaaS platform for legal teams as a Product Manager";
+	var aboutMe2 = "Pushp is currently learning Microsoft Azure, under the Microft future ready talent program.";
 	var id2 = "chat-"+(totalMessages - messagesRemaining + 1).toString();
-	var aboutMe3 = "Psst. I am the UX designer for my projects as well! We can discuss this over some coffee ☕";
+	var aboutMe3 = "He is a 2-Star coder in codechef and currently growing. He earns a Gold and a Silver badge in C++ and C respectively in Hackerrank. ";
 	var id3 = "chat-"+(totalMessages - messagesRemaining + 2).toString();
-	var aboutMe4 = "I love technology and I'm currently looking to join a product team as a product manager! If you've got any leads, email me at danda_priyanka@outlook.com 👍";
+	var aboutMe4 = "He loves technology and he is currently looking to do an internship. If you've got any leads, email him at pushp.ratan.civil23@heritageit.edu.in 👍";
 	var id4 = "chat-"+(totalMessages - messagesRemaining + 3).toString();
 	var botFollowUp = "Wanna see my work?";
-	var botGoodbye = "Thanks for hanging out! 👋"
+	var botGoodbye = "Wanna know more about him. You can discuss this over some coffee ☕ 👋"
 	var id5 = "chat-"+(totalMessages - messagesRemaining + 4).toString();
 
 	//Only include bot follow up if this is not the final prompt
