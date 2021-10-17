@@ -8,11 +8,11 @@ Waves.init();
 const products = [{ "title": "BloodConnect", 
 					"description" : "Worked as Data Manager in BloodConnect and retrieve, seperate and sort program output as needed", 
 					"banner" : "https://scontent.fpat3-2.fna.fbcdn.net/v/t1.6435-9/104449187_3690080357675059_613989442308181440_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=973b4a&_nc_ohc=8_c_LQr2FsQAX-ZmOu-&_nc_ht=scontent.fpat3-2.fna&oh=260dcd2cfeed2af61940cf47650638f5&oe=6191B732",
-					"url" : "apple.html" },
+					"url" : "BloodConnect.html" },
 					{ "title": "Anubhav Drama Club - HITK", 
 					"description" : "Performed in many street plays, monologues and theatre as a lead actor", 
 					"banner" : "https://raw.githubusercontent.com/codebaap/codebaap.github.io/main/img/Untitled-1.png", 
-					"url" : "bridgestone.html"}];
+					"url" : "Anubhav.html"}];
 
 //Insert projects info here
 const projects = [{ "title": "Pushp Ratan- Portofolio", 
