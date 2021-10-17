@@ -17,7 +17,7 @@ const products = [{ "title": "BloodConnect",
 //Insert projects info here
 const projects = [{ "title": "Pushp Ratan- Portofolio", 
 					"description" : "It is a portofolio site which describes Pushp's work", 
-					"banner" : "https://i.imgur.com/Dbo3KhP.png",
+					"banner" : "https://raw.githubusercontent.com/codebaap/codebaap.github.io/main/img/pngtree-vector-breifcase-icon-png-image_425946-removebg-preview.png",
 					"url" : "mechatronics.html" }
 		];
 
