@@ -99,7 +99,7 @@ class MessageBot extends React.Component {
 
 			<div className="chatContainer animated slideInUp d-flex flex-row justify-content-start align-items-end">
 				<div className="thumbnail" id={"pic-"+ids[0]}>
-					<img src="https://i.imgur.com/qo6Fe88.jpg"></img>
+					<img src="https://raw.githubusercontent.com/codebaap/codebaap.github.io/main/img/Capture.png"></img>
 				</div>
 				<ul className="chatBubbles">
 					{messages}
@@ -136,12 +136,12 @@ $(document).on("click", "#btnProducts", function(){
 	
 	//Render user reply
 	var idProd1 = (totalMessages - messagesRemaining).toString();
-	ReactDOM.render(<MessageUser message="Tell me about your experience" id={"chat-"+idProd1}/>, document.getElementById('userReplies'));
+	ReactDOM.render(<MessageUser message="What are Pushp's Experiennces?" id={"chat-"+idProd1}/>, document.getElementById('userReplies'));
 	messagesRemaining -= 1;
 	$(".replyButtons").before($("#userReplies").html());
 
 	//Render bot reply
-	var botReply = ["Sure thing"];
+	var botReply = ["His experiences are quite good. Some of his experiences are:"];
 	var idProd2 = (totalMessages - messagesRemaining).toString();
 	ReactDOM.render(<MessageBot message={botReply} id={["chat-"+idProd2]} />, document.getElementById('botReplies'));
 	messagesRemaining -= 1;
