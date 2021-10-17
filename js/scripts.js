@@ -15,14 +15,10 @@ const products = [{ "title": "BloodConnect",
 					"url" : "bridgestone.html"}];
 
 //Insert projects info here
-const projects = [{ "title": "Floor Cleaning Robot", 
-					"description" : "Designed an autonomous robot that can track, sort, pickup and drop ball bearings in a no light situation.", 
+const projects = [{ "title": "Pushp Ratan- Portofolio", 
+					"description" : "It is a portofolio site which describes Pushp's work", 
 					"banner" : "https://i.imgur.com/Dbo3KhP.png",
-					"url" : "mechatronics.html" },
-					{ "title": "Refrigeration Solution for office purposes", 
-					"description" : "Designed a solution for shared refrigerator space for offices to increase efficiency in maintenance.", 
-					"banner" : "https://i.imgur.com/0XjdIHP.png",
-					"url" : "refridgerator.html" }
+					"url" : "mechatronics.html" }
 		];
 
 //PORTFOLIO INFO END
