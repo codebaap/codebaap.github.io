@@ -162,7 +162,7 @@ $(document).on("click", "#btnProducts", function(){
 
 	//Reveal and animate rendered components
 	$(".container").addClass("fixed-bottom");
-	$(".replyButtons").removeClass("fadeIn");
+	
 	$("#chat-"+idProd1).slideToggle();
 	setTimeout(function(){ $("#btnProducts").remove();; }, 400);
 	setTimeout(function(){ $("#chat-"+idProd2).slideToggle(); }, 1000);
@@ -170,7 +170,7 @@ $(document).on("click", "#btnProducts", function(){
 	setTimeout(function(){ $("#cards-products .card").slideToggle(); }, 2000);
 	setTimeout(function(){ $("#chat-"+idProd3).slideToggle(); }, 3000);
 	setTimeout(function(){ $("#pic-chat-"+idProd3).slideToggle(); }, 3000);
-	setTimeout(function(){ $('.replyButtons button').prop('disabled', false); $(".replyButtons").addClass("fadeIn"); }, 3000);
+	setTimeout(function(){ $('.replyButtons button').prop('disabled', false);}, 3000);
 	setTimeout(function(){ updateScroll(); $(".card").removeClass("animated"); }, 3400);
 
 });
@@ -212,7 +212,6 @@ $(document).on("click", "#btnProjects", function(){
 
 	//Reveal and animate rendered components
 	$(".container").addClass("fixed-bottom");
-	$(".replyButtons").removeClass("fadeIn");
 	
 	$("#chat-"+idProj1).slideToggle();
 	setTimeout(function(){ $("#btnProjects").remove(); }, 400);
@@ -221,7 +220,7 @@ $(document).on("click", "#btnProjects", function(){
 	setTimeout(function(){ $("#cards-projects .card").slideToggle(); }, 2000);
 	setTimeout(function(){ $("#chat-"+idProj3).slideToggle(); }, 3000);
 	setTimeout(function(){ $("#pic-chat-"+idProj3).slideToggle(); }, 3000);
-	setTimeout(function(){ $('.replyButtons button').prop('disabled', false); $(".replyButtons").addClass("fadeIn"); }, 3000);
+	setTimeout(function(){ $('.replyButtons button').prop('disabled', false);}, 3000);
 	setTimeout(function(){ updateScroll(); $(".card").removeClass("animated"); }, 3400);
 
 });
@@ -265,7 +264,6 @@ $(document).on("click", "#btnAboutMe", function(){
 	
 	//Animate rendered components
 	$(".container").addClass("fixed-bottom");
-	$(".replyButtons").removeClass("fadeIn");
 	$("#chat-"+idAbout1).slideToggle();
 	setTimeout(function(){ $("#btnAboutMe").remove(); }, 400);
 	setTimeout(function(){ $("#"+id1).slideToggle(); }, 1000);
@@ -273,7 +271,7 @@ $(document).on("click", "#btnAboutMe", function(){
 	setTimeout(function(){ $("#"+id2).slideToggle(); }, 2000);
 	setTimeout(function(){ $("#"+id3).slideToggle(); }, 3000);
 	setTimeout(function(){ $("#"+id4).slideToggle(); }, 4000);
-	setTimeout(function(){ $('.replyButtons button').prop('disabled', false); $(".replyButtons").addClass("fadeIn"); }, 4000);
+	setTimeout(function(){ $('.replyButtons button').prop('disabled', false);}, 4000);
 	setTimeout(function(){ updateScroll(); $(".card").removeClass("animated"); }, 4400);
 
 });
@@ -321,7 +319,6 @@ $('#chat-1').one(animationEnd, function(){
 			setTimeout(function(){$("#chat-4").slideToggle()}, 100);
 			$('#chat-4').one(animationEnd, function(){
 				$(".replyButtons").css("visibility", "visible");
-				$(".replyButtons").addClass("animated fadeIn");
 			});
 		});
 	});
