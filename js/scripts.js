@@ -128,8 +128,8 @@ const outroID = "outro";
 $(document).on("click", "#btnProducts", function(){
 
 	$('.replyButtons button').prop('disabled', true);
+	$("#header").fadeOut();
 	
-		
 	//Render user reply
 	var idProd1 = (totalMessages - messagesRemaining).toString();
 	ReactDOM.render(<MessageUser message="What are Pushp's Experiennces?" id={"chat-"+idProd1}/>, document.getElementById('userReplies'));
@@ -162,7 +162,8 @@ $(document).on("click", "#btnProducts", function(){
 
 	//Reveal and animate rendered components
 	$(".container").addClass("fixed-bottom");
-	
+	$(".replyButtons").removeClass("fadeIn");
+	$(".replyButtons").addClass("fadeOut");
 	$("#chat-"+idProd1).slideToggle();
 	setTimeout(function(){ $("#btnProducts").remove();; }, 400);
 	setTimeout(function(){ $("#chat-"+idProd2).slideToggle(); }, 1000);
@@ -170,7 +171,7 @@ $(document).on("click", "#btnProducts", function(){
 	setTimeout(function(){ $("#cards-products .card").slideToggle(); }, 2000);
 	setTimeout(function(){ $("#chat-"+idProd3).slideToggle(); }, 3000);
 	setTimeout(function(){ $("#pic-chat-"+idProd3).slideToggle(); }, 3000);
-	setTimeout(function(){ $('.replyButtons button').prop('disabled', false);}, 3000);
+	setTimeout(function(){ $('.replyButtons button').prop('disabled', false); $(".replyButtons").removeClass("fadeOut"); $(".replyButtons").addClass("fadeIn"); }, 3000);
 	setTimeout(function(){ updateScroll(); $(".card").removeClass("animated"); }, 3400);
 
 });
@@ -178,7 +179,7 @@ $(document).on("click", "#btnProducts", function(){
 $(document).on("click", "#btnProjects", function(){
 
 	$('.replyButtons button').prop('disabled', true);
-	
+	$("#header").fadeOut();
 	
 	//Render user reply
 	var idProj1 = (totalMessages - messagesRemaining).toString();
@@ -212,7 +213,8 @@ $(document).on("click", "#btnProjects", function(){
 
 	//Reveal and animate rendered components
 	$(".container").addClass("fixed-bottom");
-	
+	$(".replyButtons").removeClass("fadeIn");
+	$(".replyButtons").addClass("fadeOut");
 	$("#chat-"+idProj1).slideToggle();
 	setTimeout(function(){ $("#btnProjects").remove(); }, 400);
 	setTimeout(function(){ $("#chat-"+idProj2).slideToggle(); }, 1000);
@@ -220,7 +222,7 @@ $(document).on("click", "#btnProjects", function(){
 	setTimeout(function(){ $("#cards-projects .card").slideToggle(); }, 2000);
 	setTimeout(function(){ $("#chat-"+idProj3).slideToggle(); }, 3000);
 	setTimeout(function(){ $("#pic-chat-"+idProj3).slideToggle(); }, 3000);
-	setTimeout(function(){ $('.replyButtons button').prop('disabled', false);}, 3000);
+	setTimeout(function(){ $('.replyButtons button').prop('disabled', false); $(".replyButtons").removeClass("fadeOut"); $(".replyButtons").addClass("fadeIn"); }, 3000);
 	setTimeout(function(){ updateScroll(); $(".card").removeClass("animated"); }, 3400);
 
 });
@@ -228,7 +230,7 @@ $(document).on("click", "#btnProjects", function(){
 $(document).on("click", "#btnAboutMe", function(){
 
 	$('.replyButtons button').prop('disabled', true);
-	
+	$("#header").fadeOut();
 	
 	//Render user reply
 	var idAbout1 = (totalMessages - messagesRemaining).toString();
@@ -264,6 +266,8 @@ $(document).on("click", "#btnAboutMe", function(){
 	
 	//Animate rendered components
 	$(".container").addClass("fixed-bottom");
+	$(".replyButtons").removeClass("fadeIn");
+	$(".replyButtons").addClass("fadeOut");
 	$("#chat-"+idAbout1).slideToggle();
 	setTimeout(function(){ $("#btnAboutMe").remove(); }, 400);
 	setTimeout(function(){ $("#"+id1).slideToggle(); }, 1000);
@@ -271,7 +275,7 @@ $(document).on("click", "#btnAboutMe", function(){
 	setTimeout(function(){ $("#"+id2).slideToggle(); }, 2000);
 	setTimeout(function(){ $("#"+id3).slideToggle(); }, 3000);
 	setTimeout(function(){ $("#"+id4).slideToggle(); }, 4000);
-	setTimeout(function(){ $('.replyButtons button').prop('disabled', false);}, 4000);
+	setTimeout(function(){ $('.replyButtons button').prop('disabled', false); $(".replyButtons").removeClass("fadeOut"); $(".replyButtons").addClass("fadeIn"); }, 4000);
 	setTimeout(function(){ updateScroll(); $(".card").removeClass("animated"); }, 4400);
 
 });
@@ -319,6 +323,7 @@ $('#chat-1').one(animationEnd, function(){
 			setTimeout(function(){$("#chat-4").slideToggle()}, 100);
 			$('#chat-4').one(animationEnd, function(){
 				$(".replyButtons").css("visibility", "visible");
+				$(".replyButtons").addClass("animated fadeIn");
 			});
 		});
 	});
